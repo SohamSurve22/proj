@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+.page {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 12px;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.card,
+.center-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 14px;
+  margin: 12px 0;
+  background: #fff;
+}
+
+.center-card {
+  width: 320px;
+  margin: 50px auto;
+}
+
+.form,
+.card {
+  display: grid;
+  gap: 10px;
+}
+
+input,
+select,
+button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background: #d11b1b;
+  color: #fff;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #666;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.movie-box {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.movie-box.active {
+  border-color: #d11b1b;
+  background: #fff2f2;
+}
+
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 70px);
+  gap: 8px;
+}
+
+.seat {
+  background: #fff;
+  color: #111;
+}
+
+.seat.selected {
+  background: #2ea44f;
+  color: #fff;
+}
+
+.seat.booked {
+  background: #a0a0a0;
+  color: #fff;
+}
+
+.small {
+  color: #555;
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

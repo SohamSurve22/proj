@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #222;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 12px;
+}
+
+h1, h2, h3 {
+  color: #0d47a1;
+}
+
+.top-nav {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.card {
+  border: 1px solid #d8e3f5;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 14px;
+}
+
+.login-card {
+  max-width: 380px;
+  margin: 20px auto;
+}
+
+input, textarea, button {
+  width: 100%;
+  margin: 6px 0;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #c2d4ef;
+  box-sizing: border-box;
+}
+
+button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #125ca3;
+}
+
+.list-item {
+  border-top: 1px solid #eef3fb;
+  padding: 8px 0;
+}

@@ -1,0 +1,297 @@
+/* ==========================================
+   Mumbai University Practical Exam CSS
+   Color theme: White base with Teal accents
+   ========================================== */
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background-color: #ffffff;
+  border-bottom: 2px solid #008080; /* Teal accent border */
+}
+
+.header-brand h1 {
+  font-size: 1.5rem;
+  color: #008080;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  background: none;
+  border: 1px solid #008080;
+  color: #008080;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.nav-btn:hover, .nav-btn.active {
+  background-color: #008080;
+  color: #ffffff;
+}
+
+.logout-btn {
+  border-color: #dc2626;
+  color: #dc2626;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+/* Main Layout */
+.main-content {
+  padding: 30px 5%;
+  min-height: calc(100vh - 140px);
+}
+
+.section-title {
+  text-align: center;
+  color: #008080;
+  margin-bottom: 30px;
+}
+
+/* Container Styling */
+.section-container {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.section-container h3 {
+  margin-bottom: 20px;
+  color: #008080;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 10px;
+}
+
+/* Room Cards Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.room-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 15px;
+  background-color: #f8fafc;
+}
+
+.room-card h4 {
+  font-size: 1.2rem;
+  color: #008080;
+  margin-bottom: 10px;
+}
+
+.room-card p {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+/* Badges */
+.badge {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.badge-success {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.badge-danger {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+/* Forms styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.form-group input:focus, .form-group select:focus {
+  outline: none;
+  border-color: #008080;
+}
+
+.grid-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  align-items: flex-end;
+}
+
+.btn-group-align {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+/* Admin Grid Layout */
+.admin-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  margin-top: 10px;
+}
+
+.btn-xs {
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  width: auto;
+}
+
+.btn-teal {
+  background-color: #008080;
+  color: #ffffff;
+}
+
+.btn-teal:hover {
+  background-color: #006666;
+}
+
+.btn-danger {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.btn-danger:hover {
+  background-color: #b91c1c;
+}
+
+.btn-success {
+  background-color: #16a34a;
+  color: #ffffff;
+}
+
+.btn-success:hover {
+  background-color: #15803d;
+}
+
+/* Login Center Card */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.login-card h2 {
+  text-align: center;
+  color: #008080;
+  margin-bottom: 20px;
+}
+
+/* Tables styling */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.data-table th, .data-table td {
+  padding: 12px 15px;
+  border: 1px solid #e2e8f0;
+}
+
+.data-table th {
+  background-color: #f1f5f9;
+  color: #008080;
+  font-weight: 600;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 0.85rem;
+}
