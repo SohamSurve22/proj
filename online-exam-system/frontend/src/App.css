@@ -1,0 +1,270 @@
+/* QUICK EDIT FOR EXAM:
+   - Background color: #f5f1ea  (soft beige)
+   - Accent color:     #1e3a5f  (deep navy)
+   - Card color:       #ffffff
+   Change these three values to retheme the entire app instantly. */
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f1ea;
+  color: #222222;
+}
+
+/* ── CONTAINER ── */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 14px 30px;
+}
+
+/* ── HEADER ── */
+.header {
+  text-align: center;
+  padding: 28px 0 10px;
+  margin-bottom: 4px;
+}
+
+.header h1 {
+  color: #1e3a5f;
+  font-size: 1.7rem;
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+
+.header p {
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* ── CARD ── */
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(30, 58, 95, 0.08);
+  border-top: 4px solid #1e3a5f;
+}
+
+h2 {
+  margin: 0 0 14px;
+  color: #1e3a5f;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+/* ── FORM GRID ── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 10px;
+}
+
+/* Wide input spanning 2 columns */
+.span2 {
+  grid-column: span 2;
+}
+
+input,
+select {
+  padding: 9px 12px;
+  border: 1px solid #d1c9bb;
+  border-radius: 8px;
+  background: #faf8f5;
+  color: #222;
+  font-size: 0.9rem;
+}
+
+input::placeholder {
+  color: #a09a92;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #1e3a5f;
+  background: #fff;
+}
+
+/* ── BUTTON ── */
+button {
+  padding: 9px 18px;
+  background: #1e3a5f;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #16304f;
+}
+
+/* ── DASHBOARD STATS ── */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.stat-box {
+  background: #f0ecf5;
+  border: 1px solid #c6bfaa;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.stat-num {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e3a5f;
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ── EXAM AREA ── */
+.exam-area {
+  margin-top: 6px;
+}
+
+.exam-info {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 16px;
+  padding: 10px 14px;
+  background: #f5f1ea;
+  border-radius: 6px;
+  border-left: 4px solid #1e3a5f;
+}
+
+.question-block {
+  background: #faf8f5;
+  border: 1px solid #d1c9bb;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+
+.q-text {
+  margin: 0 0 10px;
+  color: #1e3a5f;
+  font-size: 0.95rem;
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  color: #333;
+}
+
+.option-label input[type="radio"] {
+  width: 15px;
+  height: 15px;
+  accent-color: #1e3a5f;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  background: #c0392b;   /* Red for submit — stands out */
+  padding: 10px 28px;
+}
+
+.submit-btn:hover {
+  background: #a93226;
+}
+
+/* ── RESULT BOX ── */
+.result-box {
+  background: #edf5ec;
+  border: 1px solid #a3c9a8;
+  border-radius: 8px;
+  padding: 18px 20px;
+  text-align: center;
+}
+
+.result-box h3 {
+  margin: 0 0 8px;
+  color: #256029;
+}
+
+.result-box p {
+  margin: 4px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.result-box button {
+  margin-top: 12px;
+  background: #1e3a5f;
+}
+
+/* ── TABLE ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+th,
+td {
+  border: 1px solid #e0d9ce;
+  padding: 9px 11px;
+  text-align: left;
+}
+
+th {
+  background: #1e3a5f;
+  color: #ffffff;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+tr:nth-child(even) td {
+  background: #faf8f5;
+}
+
+tr:hover td {
+  background: #f0ece4;
+}
+
+/* Highlight correct answer column */
+.correct-cell {
+  color: #1e7e34;
+  font-weight: bold;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 700px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .span2 {
+    grid-column: span 1;
+  }
+}
