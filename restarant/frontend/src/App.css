@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #1f1511;
+  color: #f8efe7;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 18px auto 32px;
+  padding: 12px 18px;
+}
+
+h1 {
+  text-align: center;
+  color: #ffe7d2;
+  margin: 18px 0 14px;
+}
+
+.topBar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card,
+.loginCard {
+  border: 1px solid #6f3d2a;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 22px;
+  background: #2d211b;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.loginCard {
+  max-width: 380px;
+  margin: 20px auto;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+  align-items: end;
+}
+
+.loginCard .formGrid {
+  grid-template-columns: 1fr;
+}
+
+input,
+select,
+button {
+  padding: 8px;
+  border: 1px solid #9f6a4b;
+  border-radius: 5px;
+}
+
+input,
+select {
+  background: #3a2a22;
+  color: #fff7ed;
+}
+
+input::placeholder {
+  color: #cfb5a4;
+}
+
+button {
+  background: #a34724;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button:hover,
+button.active {
+  background: #c65f32;
+}
+
+button:disabled {
+  background: #66564f;
+  cursor: not-allowed;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #251b17;
+  margin-top: 14px;
+}
+
+th,
+td {
+  border: 1px solid #5d3a2d;
+  padding: 7px;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background: #4a2b1f;
+  color: #ffe7d2;
+}
+
+.totalLine {
+  font-weight: bold;
+  color: #8fd9a8;
+  margin: 10px 0;
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 6px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
